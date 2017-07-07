@@ -1,9 +1,24 @@
 /* JQuery */ 
 
 $(document).ready(function() {
+    var imagenes = $('.slide img').length; // posicion de diapo o imagen (5)
+
+    // Agregamos las paginaciones de circulos
+    for(var i = 1; i <= imagenes; i++){
+        $('.paginas').append('<li><span class="fa fa-circle"></span></li>');
+
+    }
+
     $('.slides img').hide(); // ocultar el carousel 
     $('.slides img:first').show(); // muestra el carousel
     
+    // Funcionalidades
+    $('.paginas li').click(paginas);
+    $('.right span').click(nextSlider);
+    $('.left span').click(prevSlider);
+
+    
+
     
   });
 
@@ -34,4 +49,21 @@ $(document).ready(function() {
 
   // FUNCIONA
     $('.carousel').carousel({interval: 5000}); // cambia con tiempo definido - Va cambiando solito 5 segundos
+
+    // NO FUNCIONA
+
+    // Fin Funciones
+    function paginacion(){
+        var posicionDePag = $(this).index() + 1;
+
+        $('.slides li').hide();
+        $('.slides li:nth-child('+ posicionDePag +')').fadeIn();
+
+        $(this).css(('color': 'black'));
+    }
+
+    function nextDiapo(){
+        $('.paginas li').hide();
+        $('.')
+    }
 */
