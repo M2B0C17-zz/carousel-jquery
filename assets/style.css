@@ -5,6 +5,7 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #FF9FAB;
+	font-family: 'Bellefair', serif;
 }
 
 /* Carousel - Bootstrap */
@@ -21,8 +22,27 @@ body{
 	margin-top: 5%;
 }
 
+/* Flechas a los lados */
+.left, .right{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+}
+
+/* Sepramos y posesionamos en el lugar correcto de cada flecha */
+.left{
+	left: 320px;
+}
+
+.right{
+	left: 950px;
+}
+
 /* FOOTER */
 
 footer{
-	margin-top: 16%;
+	margin-top: 12%;
 }

@@ -1,7 +1,9 @@
 /* JQuery */ 
 
 $(document).ready(function() {
-    $('.carousel').carousel({interval: 5000}); // cambia con tiempo definido - Va cambiando solito 5 segundos
+    $('.slides img').hide(); // ocultar el carousel 
+    $('.slides img:first').show(); // muestra el carousel
+    
     
   });
 
@@ -30,4 +32,6 @@ $(document).ready(function() {
     
   });
 
+  // FUNCIONA
+    $('.carousel').carousel({interval: 5000}); // cambia con tiempo definido - Va cambiando solito 5 segundos
 */
