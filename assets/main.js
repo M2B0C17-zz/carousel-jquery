@@ -1,6 +1,14 @@
 /* JQuery */ 
-
-$(document).ready(function() {
+    $(function(){
+        setInterval(function(){
+            $('#carousel ul').animate({marginLeft: '-800px'}, 800, function(){
+            $('#carousel ul li:last').after($('#carousel ul li:first'));
+            $(this).css('margin-left', '0');
+        });
+        },5000);
+    });
+    
+/*
     var imagenes = $('.slide img').length; // posicion de diapo o imagen (5)
 
     // Agregamos las paginaciones de circulos
@@ -22,7 +30,7 @@ $(document).ready(function() {
     
   });
 
-
+*/
 /* INTENTOS CUECK
 
 $(document).ready(function() {

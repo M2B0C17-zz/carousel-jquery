@@ -11,6 +11,7 @@ body{
 /* Carousel - Bootstrap */
 .carousel {
     overflow: hidden;
+    list-style: none;
 }
 
 /* Tamaño Carousel */
@@ -34,7 +35,7 @@ body{
 
 /* Sepramos y posesionamos en el lugar correcto de cada flecha */
 .left{
-	left: 320px;
+	left: 350px;
 }
 
 .right{
